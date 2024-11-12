@@ -20,7 +20,10 @@ const ComponentName: React.FC = () => {
       <Link to="/s260">S260</Link> |<Link to="/s270">S270</Link> |
       <Link to="/s280">S280</Link> |<Link to="/s290">S290</Link> |
       <Link to="/s300">S300</Link> |<Link to="/s310">S310</Link> |
-      <Link to="/ex10">Ex10</Link> | <Link to="/ex20">Ex20</Link>
+      <Link to="/ex10">Ex10</Link> | <Link to="/ex20">Ex20</Link>|
+      <Link to="/ex30">Ex30</Link> | <Link to="/ex40">Ex40</Link>|
+      <Link to="/ex50">Ex50</Link> | <Link to="/ex60">Ex60</Link>|
+      <Link to="/ex70">Ex70</Link> | <Link to="/ex80">Ex80</Link>
     </nav>
   );
 };

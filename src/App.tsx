@@ -33,6 +33,17 @@ import S260countUpParent from "./views/sample/S260countUpParent";
 import S270lifeCycleDemo from "./views/sample/S270lifeCycleDemo";
 import S280emitParent from "./views/sample/S280emitParent";
 import S290emitParent2 from "./views/sample/S290emitParent2";
+import Ex30 from "./views/answer/Ex30";
+import Ex40 from "./views/answer/Ex40";
+import Ex50 from "./views/answer/Ex50";
+import Ex60 from "./views/answer/Ex60";
+// import Ex50 from "./views/answer/Ex50";
+// import Ex60 from "./views/answer/Ex60";
+// import Ex70 from "./views/answer/Ex70";
+// import Ex80 from "./views/answer/Ex80";
+// import Ex90 from "./views/answer/Ex90";
+// import Ex100 from "./views/answer/Ex100";
+// import Ex110 from "./views/answer/Ex110";
 
 function App() {
   console.log("App component is rendering");
@@ -73,6 +84,15 @@ function App() {
           <Route path="/s290" element={<S290emitParent2 />} />
           <Route path="/ex10" element={<Ex10 />} />
           <Route path="/ex20" element={<Ex20 />} />
+          <Route path="/ex30" element={<Ex30 />} />
+          <Route path="/ex40" element={<Ex40 />} />
+          <Route path="/ex50" element={<Ex50 />} />
+          <Route path="/ex60" element={<Ex60 />} />
+          {/* <Route path="/ex70" element={<Ex70 />} />
+          <Route path="/ex80" element={<Ex80 />} />
+          <Route path="/ex90" element={<Ex90 />} />
+          <Route path="/ex100" element={<Ex100 />} />
+          <Route path="/ex110" element={<Ex110 />} /> */}
         </Routes>
       </Router>
     </>
