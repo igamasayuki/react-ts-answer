@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const S30onClickEvent: React.FC = () => {
-  const [myName, setMyName] = useState("");
+  const [myName, setMyName] = useState<string>("");
 
   // handle という接頭辞を使うことで、「この関数はイベントをハンドルするためのものだ」という意図が明確になります。
   // React のコミュニティでは、イベントハンドラーに handle という接頭辞を使うことが一般的です。

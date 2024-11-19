@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 const S60singleCheckBox: React.FC = () => {
-  const [isAgree, setIsAgree] = useState(false);
+  const [isAgree, setIsAgree] = useState<boolean>(false);
 
-  const singleCheckBoxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSingleCheckBoxChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setIsAgree(event.target.checked);
   };
 
@@ -15,7 +17,7 @@ const S60singleCheckBox: React.FC = () => {
         type="checkbox"
         id="agree"
         checked={isAgree}
-        onChange={singleCheckBoxChange}
+        onChange={handleSingleCheckBoxChange}
       />
       <p>回答:{isAgree.toString()}</p>
       <hr />

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { hobbyOptions } from "../../constants/data";
 
 const S80singleSelectBox: React.FC = () => {
-  const [hobby, setHobby] = useState<string>("自転車");
+  const [hobby, setHobby] = useState<string>(hobbyOptions.bike);
 
-  const selectBoxChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleSelectBoxChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setHobby(event.target.value);
   };
 
@@ -12,11 +15,11 @@ const S80singleSelectBox: React.FC = () => {
       <div>セレクトボックス(単一)</div>
       <label htmlFor="hobby">趣味は何ですか？</label>
       <br />
-      <select id="hobby" value={hobby} onChange={selectBoxChange}>
+      <select id="hobby" value={hobby} onChange={handleSelectBoxChange}>
         <option value="">趣味を選択してください</option>
-        <option value="水泳">水泳</option>
-        <option value="自転車">自転車</option>
-        <option value="ランニング">ランニング</option>
+        <option value={hobbyOptions.swim}>{hobbyOptions.swim}</option>
+        <option value={hobbyOptions.bike}>{hobbyOptions.bike}</option>
+        <option value={hobbyOptions.run}>{hobbyOptions.run}</option>
       </select>
       <br />
       <p>選択した値：{hobby}</p>

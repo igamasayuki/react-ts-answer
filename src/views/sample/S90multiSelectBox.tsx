@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { hobbyOptions } from "../../constants/data";
 
 const S90multiSelectBox: React.FC = () => {
-  const [hobbies, setHobbies] = useState<string[]>(["水泳", "ランニング"]);
+  const [hobbies, setHobbies] = useState<string[]>([
+    hobbyOptions.swim,
+    hobbyOptions.run,
+  ]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     // event.target.selectedOptionsの一つ一つの要素から、
@@ -19,9 +23,9 @@ const S90multiSelectBox: React.FC = () => {
       <label htmlFor="hobbies">趣味は何ですか？</label>
       <br />
       <select id="hobbies" value={hobbies} onChange={handleChange} multiple>
-        <option value="水泳">水泳</option>
-        <option value="自転車">自転車</option>
-        <option value="ランニング">ランニング</option>
+        <option value={hobbyOptions.swim}>{hobbyOptions.swim}</option>
+        <option value={hobbyOptions.bike}>{hobbyOptions.bike}</option>
+        <option value={hobbyOptions.run}>{hobbyOptions.run}</option>
       </select>
       <br />
       <p>選択した値: {hobbies.join(", ")}</p>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const Ex50: React.FC = () => {
-  const [isEnabled, setIsEnabled] = useState(true);
-  const [isDisabled, setIsDisabled] = useState(false);
+  const [isEnabled, setIsEnabled] = useState<boolean>(true);
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
   const handleClick = () => {
     // isEnabled と isDisabled の値を反転させる
@@ -43,7 +43,9 @@ const Ex50: React.FC = () => {
         <input type="checkbox" checked={isDisabled} />
       </label>
       <hr />
-      <button onClick={handleClick}>振る舞いを反転させる</button>
+      <button type="button" onClick={handleClick}>
+        振る舞いを反転させる
+      </button>
     </div>
   );
 };

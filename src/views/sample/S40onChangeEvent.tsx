@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const S40onChangeEvent: React.FC = () => {
-  const [myName, setMyName] = useState("");
+  const [myName, setMyName] = useState<string>("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setMyName(event.target.value);

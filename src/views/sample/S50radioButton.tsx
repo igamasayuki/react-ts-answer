@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 const S50radioButton: React.FC = () => {
-  const [hobby, setHobby] = useState("自転車");
+  const hobbyOptions = {
+    swim: "水泳",
+    bike: "自転車",
+    run: "ランニング",
+  };
+  const [hobby, setHobby] = useState<string>(hobbyOptions.bike);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setHobby(event.target.value);
@@ -14,31 +19,31 @@ const S50radioButton: React.FC = () => {
         <input
           type="radio"
           id="swim"
-          value="水泳"
-          checked={hobby === "水泳"}
+          value={hobbyOptions.swim}
+          checked={hobby === hobbyOptions.swim}
           onChange={handleChange}
         />
-        <label htmlFor="swim">水泳</label>
+        <label htmlFor="swim">{hobbyOptions.swim}</label>
       </div>
       <div>
         <input
           type="radio"
           id="bike"
-          value="自転車"
-          checked={hobby === "自転車"}
+          value={hobbyOptions.bike}
+          checked={hobby === hobbyOptions.bike}
           onChange={handleChange}
         />
-        <label htmlFor="bike">自転車</label>
+        <label htmlFor="bike">{hobbyOptions.bike}</label>
       </div>
       <div>
         <input
           type="radio"
           id="run"
-          value="ランニング"
-          checked={hobby === "ランニング"}
+          value={hobbyOptions.run}
+          checked={hobby === hobbyOptions.run}
           onChange={handleChange}
         />
-        <label htmlFor="run">ランニング</label>
+        <label htmlFor="run">{hobbyOptions.run}</label>
       </div>
       <p>趣味: {hobby}</p>
     </div>

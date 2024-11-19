@@ -1,13 +1,21 @@
 import React, { useState } from "react";
+import { hobbyOptions } from "../../constants/data";
 
 const S70multiCheckBox: React.FC = () => {
-  const [hobbies, setHobbies] = useState(["水泳", "ランニング"]);
+  const [hobbies, setHobbies] = useState<string[]>([
+    hobbyOptions.swim,
+    hobbyOptions.run,
+  ]);
 
-  const multiCheckBoxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleMultiCheckBoxChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     const value = event.target.value;
 
     if (hobbies.includes(value)) {
       // チェックされたvalueが既に(配列に)含まれていたら、削除する
+      // value以外(hobby !=== value)のものをセットし直している
+      // value(hobby === value)はセットしない
       setHobbies(hobbies.filter((hobby) => hobby !== value));
     } else {
       // 配列にチェックされたvalueを追加(スプレッド構文使用)
@@ -19,29 +27,29 @@ const S70multiCheckBox: React.FC = () => {
     <div className="sample">
       <div>チェックボックス(複数)</div>
       <div>趣味は何ですか？</div>
-      <label htmlFor="swim">水泳</label>
+      <label htmlFor="swim">{hobbyOptions.swim}</label>
       <input
         type="checkbox"
         id="swim"
-        value="水泳"
-        checked={hobbies.includes("水泳")}
-        onChange={multiCheckBoxChange}
+        value={hobbyOptions.swim}
+        checked={hobbies.includes(hobbyOptions.swim)}
+        onChange={handleMultiCheckBoxChange}
       />
-      <label htmlFor="bike">自転車</label>
+      <label htmlFor="bike">{hobbyOptions.bike}</label>
       <input
         type="checkbox"
         id="bike"
-        value="自転車"
-        checked={hobbies.includes("自転車")}
-        onChange={multiCheckBoxChange}
+        value={hobbyOptions.bike}
+        checked={hobbies.includes(hobbyOptions.bike)}
+        onChange={handleMultiCheckBoxChange}
       />
-      <label htmlFor="run">ランニング</label>
+      <label htmlFor="run">{hobbyOptions.run}</label>
       <input
         type="checkbox"
         id="run"
-        value="ランニング"
-        checked={hobbies.includes("ランニング")}
-        onChange={multiCheckBoxChange}
+        value={hobbyOptions.run}
+        checked={hobbies.includes(hobbyOptions.run)}
+        onChange={handleMultiCheckBoxChange}
       />
       <br />
       回答：{hobbies.join(",")}
