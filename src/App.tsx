@@ -13,7 +13,6 @@ import S60singleCheckBox from "./views/sample/S60singleCheckBox";
 import S70multiCheckBox from "./views/sample/S70multiCheckBox";
 import S80singleSelectBox from "./views/sample/S80singleSelectBox";
 import S90multiSelectBox from "./views/sample/S90multiSelectBox";
-import S100parseFloat from "./views/sample/S100parseFloat";
 import S110trim from "./views/sample/S110trim";
 import S120blur from "./views/sample/S120blur";
 import S130if from "./views/sample/S130if";
@@ -37,6 +36,8 @@ import Ex30 from "./views/answer/Ex30";
 import Ex40 from "./views/answer/Ex40";
 import Ex50 from "./views/answer/Ex50";
 import Ex60 from "./views/answer/Ex60";
+import S100stringAddition from "./views/sample/S100stringAddition";
+import S100numberAddition from "./views/sample/S100numberAddition";
 // import Ex50 from "./views/answer/Ex50";
 // import Ex60 from "./views/answer/Ex60";
 // import Ex70 from "./views/answer/Ex70";
@@ -62,7 +63,8 @@ function App() {
           <Route path="/s70" element={<S70multiCheckBox />} />
           <Route path="/s80" element={<S80singleSelectBox />} />
           <Route path="/s90" element={<S90multiSelectBox />} />
-          <Route path="/s100" element={<S100parseFloat />} />
+          <Route path="/s100string" element={<S100stringAddition />} />
+          <Route path="/s100number" element={<S100numberAddition />} />
           <Route path="/s110" element={<S110trim />} />
           <Route path="/s120" element={<S120blur />} />
           <Route path="/s130" element={<S130if />} />
