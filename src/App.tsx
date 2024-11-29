@@ -38,6 +38,10 @@ import Ex50 from "./views/answer/Ex50";
 import Ex60 from "./views/answer/Ex60";
 import S100stringAddition from "./views/sample/S100stringAddition";
 import S100numberAddition from "./views/sample/S100numberAddition";
+import Ex70 from "./views/answer/Ex70";
+import Ex80 from "./views/answer/Ex80";
+import Ex90 from "./views/answer/Ex90";
+import Ex100 from "./views/answer/Ex100";
 // import Ex50 from "./views/answer/Ex50";
 // import Ex60 from "./views/answer/Ex60";
 // import Ex70 from "./views/answer/Ex70";
@@ -90,11 +94,11 @@ function App() {
           <Route path="/ex40" element={<Ex40 />} />
           <Route path="/ex50" element={<Ex50 />} />
           <Route path="/ex60" element={<Ex60 />} />
-          {/* <Route path="/ex70" element={<Ex70 />} />
+          <Route path="/ex70" element={<Ex70 />} />
           <Route path="/ex80" element={<Ex80 />} />
           <Route path="/ex90" element={<Ex90 />} />
           <Route path="/ex100" element={<Ex100 />} />
-          <Route path="/ex110" element={<Ex110 />} /> */}
+          {/*<Route path="/ex110" element={<Ex110 />} /> */}
         </Routes>
       </Router>
     </>
