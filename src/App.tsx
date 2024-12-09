@@ -42,13 +42,8 @@ import Ex70 from "./views/answer/Ex70";
 import Ex80 from "./views/answer/Ex80";
 import Ex90 from "./views/answer/Ex90";
 import Ex100 from "./views/answer/Ex100";
-// import Ex50 from "./views/answer/Ex50";
-// import Ex60 from "./views/answer/Ex60";
-// import Ex70 from "./views/answer/Ex70";
-// import Ex80 from "./views/answer/Ex80";
-// import Ex90 from "./views/answer/Ex90";
-// import Ex100 from "./views/answer/Ex100";
-// import Ex110 from "./views/answer/Ex110";
+import Ex110 from "./views/answer/Ex110";
+import Ex120 from "./views/answer/Ex120";
 
 function App() {
   console.log("App component is rendering");
@@ -98,7 +93,8 @@ function App() {
           <Route path="/ex80" element={<Ex80 />} />
           <Route path="/ex90" element={<Ex90 />} />
           <Route path="/ex100" element={<Ex100 />} />
-          {/*<Route path="/ex110" element={<Ex110 />} /> */}
+          <Route path="/ex110" element={<Ex110 />} />
+          <Route path="/ex120" element={<Ex120 />} />
         </Routes>
       </Router>
     </>

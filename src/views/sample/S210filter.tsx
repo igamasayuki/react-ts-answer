@@ -1,20 +1,10 @@
 import React from "react";
-
-interface Item {
-  id: number;
-  name: string;
-  price: number;
-}
+import { items } from "../../constants/items"; // 定数データをインポート
+import { Item } from "../../types/item"; // 型定義をインポート
 
 const S210filter: React.FC = () => {
-  const items: Item[] = [
-    { id: 10, name: "Javaの書籍", price: 3000 },
-    { id: 20, name: "Pythonの書籍", price: 2000 },
-    { id: 30, name: "TypeScriptの書籍", price: 4500 },
-  ];
-
-  // 価格が3,000円以下の商品を抽出
-  const expensiveItems = items.filter((item) => item.price <= 3000);
+  // 価格が3,000円以下（手頃な価格）の商品を抽出
+  const cheapItems: Item[] = items.filter((item) => item.price <= 3000);
 
   return (
     <div className="sample">
@@ -29,7 +19,7 @@ const S210filter: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          {expensiveItems.map((item, i) => (
+          {cheapItems.map((item, i) => (
             <tr key={item.id}>
               <td>{i + 1}</td>
               <td>{item.id}</td>

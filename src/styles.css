@@ -1,5 +1,9 @@
 .border {
   border: 1px solid black;
+  /* 要素をインラインブロックに変更 */
+  /* <p>タグなどをインラインブロック要素に変えることで、要素の幅が内容に応じて縮小します。 */
+  display: inline-block;
+  padding: 5px; /* 内容と枠線の間に余白を追加 */
 }
 nav {
   margin-bottom: 50px;

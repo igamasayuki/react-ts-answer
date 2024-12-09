@@ -1,20 +1,8 @@
 import React from "react";
-
-interface Item {
-  id: number;
-  name: string;
-  price: number;
-}
+import { items } from "../../constants/items"; // 定数データをインポート
 
 const S200firstItem: React.FC = () => {
-  const items: Item[] = [
-    { id: 10, name: "Javaの書籍", price: 3000 },
-    { id: 20, name: "Pythonの書籍", price: 2000 },
-    { id: 30, name: "TypeScriptの書籍", price: 4500 },
-  ];
-
-  // 最初の商品を取得
-  const firstItem = items[0];
+  const firstItem = items[0] || null;
 
   return (
     <div className="sample">
@@ -27,11 +15,17 @@ const S200firstItem: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{firstItem.id}</td>
-            <td>{firstItem.name}</td>
-            <td>{firstItem.price}円</td>
-          </tr>
+          {firstItem ? (
+            <tr>
+              <td>{firstItem.id}</td>
+              <td>{firstItem.name}</td>
+              <td>{firstItem.price}円</td>
+            </tr>
+          ) : (
+            <tr>
+              <td colSpan={3}>データがありません</td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>
