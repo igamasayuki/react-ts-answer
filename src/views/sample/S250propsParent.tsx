@@ -1,14 +1,13 @@
 import React from "react";
-import CompPropsYourName from "../../components/sample/CompPropsYourName";
-
+import CompPropsYourInfo from "../../components/sample/CompPropsYourInfo";
 const S250propsParent: React.FC = () => {
   return (
     <div className="compSample">
-      <CompPropsYourName yourName="鈴木" />
+      <CompPropsYourInfo yourName="鈴木" yourAge={30} />
       <hr />
-      <CompPropsYourName yourName="山田" />
+      <CompPropsYourInfo yourName="山田" />
       <hr />
-      <CompPropsYourName />
+      <CompPropsYourInfo />
     </div>
   );
 };

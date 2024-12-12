@@ -16,6 +16,7 @@ const ComponentName: React.FC = () => {
       <Link to="/s160">S160</Link> |<Link to="/s170">S170</Link> |
       <Link to="/s180">S180</Link> |<Link to="/s190">S190</Link> |
       <Link to="/s200">S200</Link> |<Link to="/s210">S210</Link> |
+      <Link to="/s215">S215</Link> |<Link to="/s216">S216</Link> |
       <Link to="/s220">S220</Link> |<Link to="/s230">S230</Link> |
       <Link to="/s240">S240</Link> |<Link to="/s250">S250</Link> |
       <Link to="/s260">S260</Link> |<Link to="/s270">S270</Link> |
@@ -26,7 +27,8 @@ const ComponentName: React.FC = () => {
       <Link to="/ex50">Ex50</Link> | <Link to="/ex60">Ex60</Link>|
       <Link to="/ex70">Ex70</Link> | <Link to="/ex80">Ex80</Link>|
       <Link to="/ex90">Ex90</Link> | <Link to="/ex100">Ex100</Link>|
-      <Link to="/ex110">Ex110</Link> | <Link to="/ex120">Ex120</Link>
+      <Link to="/ex110">Ex110</Link> | <Link to="/ex120">Ex120</Link>|
+      <Link to="/ex130">Ex130</Link> | <Link to="/ex140">Ex140</Link>
     </nav>
   );
 };

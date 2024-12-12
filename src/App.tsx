@@ -44,6 +44,10 @@ import Ex90 from "./views/answer/Ex90";
 import Ex100 from "./views/answer/Ex100";
 import Ex110 from "./views/answer/Ex110";
 import Ex120 from "./views/answer/Ex120";
+import Ex130 from "./views/answer/Ex130";
+import Ex140 from "./views/answer/Ex140";
+import S215useEffect from "./views/sample/S215useEffect";
+import S216countUp from "./views/sample/S216countUp";
 
 function App() {
   console.log("App component is rendering");
@@ -75,6 +79,8 @@ function App() {
           <Route path="/s190" element={<S190forLoop2 />} />
           <Route path="/s200" element={<S200firstItem />} />
           <Route path="/s210" element={<S210filter />} />
+          <Route path="/s215" element={<S215useEffect />} />
+          <Route path="/s216" element={<S216countUp />} />
           <Route path="/s220" element={<S220dynamicAttributes />} />
           <Route path="/s230" element={<S230xxsSample />} />
           <Route path="/s240" element={<S240basicParent />} />
@@ -95,6 +101,8 @@ function App() {
           <Route path="/ex100" element={<Ex100 />} />
           <Route path="/ex110" element={<Ex110 />} />
           <Route path="/ex120" element={<Ex120 />} />
+          <Route path="/ex130" element={<Ex130 />} />
+          <Route path="/ex140" element={<Ex140 />} />
         </Routes>
       </Router>
     </>
