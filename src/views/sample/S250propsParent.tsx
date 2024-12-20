@@ -1,5 +1,5 @@
-import React from "react";
 import CompPropsYourInfo from "../../components/sample/CompPropsYourInfo";
+
 const S250propsParent: React.FC = () => {
   return (
     <div className="compSample">

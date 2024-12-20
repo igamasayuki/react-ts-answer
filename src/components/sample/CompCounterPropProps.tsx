@@ -7,23 +7,22 @@ interface CompCounterPropProps {
 const CompCounterProp: React.FC<CompCounterPropProps> = ({
   initialCount = 0,
 }) => {
+  // 親から受け取った値をstateにコピー
   const [nowCount, setNowCount] = useState(initialCount);
 
   useEffect(() => {
-    setNowCount(initialCount);
-  }, [initialCount]);
+    // 初期値設定の確認 (デバッグ用)
+    console.log(`現在のカウントは: ${nowCount}`);
+  }, [nowCount]);
 
-  const handleChange = () => {
-    setNowCount(nowCount + 1);
+  const countUp = () => {
+    setNowCount(nowCount + 1); // stateを更新
   };
 
   return (
     <div className="ex">
-      現在値：{nowCount}
-      <br />
-      <button type="button" onClick={handleChange}>
-        カウントを1増やす
-      </button>
+      <p>現在値: {nowCount}</p>
+      <button onClick={countUp}>カウントを1増やす</button>
     </div>
   );
 };

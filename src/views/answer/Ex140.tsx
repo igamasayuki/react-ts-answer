@@ -1,5 +1,5 @@
 import React from "react";
-import CompSelfIntroduction from "../../components/sample/CompSelfIntroduction";
+import CompSelfIntroduction from "../../components/answer/CompSelfIntroduction";
 
 const Ex140: React.FC = () => {
   return (

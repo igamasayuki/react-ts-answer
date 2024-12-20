@@ -7,10 +7,14 @@ const S216countUp: React.FC = () => {
     console.log(`カウントが更新されました: ${count}`);
   }, [count]); // countが変わるたびに実行
 
+  const countUp = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div>
       <p>現在のカウント: {count}</p>
-      <button onClick={() => setCount(count + 1)}>カウントを増やす</button>
+      <button onClick={countUp}>カウントを増やす</button>
     </div>
   );
 };

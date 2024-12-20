@@ -29,9 +29,6 @@ import S230xxsSample from "./views/sample/S230xxsSample";
 import S240basicParent from "./views/sample/S240basicParent";
 import S250propsParent from "./views/sample/S250propsParent";
 import S260countUpParent from "./views/sample/S260countUpParent";
-import S270lifeCycleDemo from "./views/sample/S270lifeCycleDemo";
-import S280emitParent from "./views/sample/S280emitParent";
-import S290emitParent2 from "./views/sample/S290emitParent2";
 import Ex30 from "./views/answer/Ex30";
 import Ex40 from "./views/answer/Ex40";
 import Ex50 from "./views/answer/Ex50";
@@ -48,6 +45,12 @@ import Ex130 from "./views/answer/Ex130";
 import Ex140 from "./views/answer/Ex140";
 import S215useEffect from "./views/sample/S215useEffect";
 import S216countUp from "./views/sample/S216countUp";
+import Ex150 from "./views/answer/Ex150";
+import Ex160 from "./views/answer/Ex160";
+import Ex170 from "./views/answer/Ex170";
+import S270propsParent from "./views/sample/S270propsParent";
+import S280CountUpParent from "./views/sample/S280CountUpParent";
+import Ex180 from "./views/answer/Ex180";
 
 function App() {
   console.log("App component is rendering");
@@ -86,9 +89,8 @@ function App() {
           <Route path="/s240" element={<S240basicParent />} />
           <Route path="/s250" element={<S250propsParent />} />
           <Route path="/s260" element={<S260countUpParent />} />
-          <Route path="/s270" element={<S270lifeCycleDemo />} />
-          <Route path="/s280" element={<S280emitParent />} />
-          <Route path="/s290" element={<S290emitParent2 />} />
+          <Route path="/s270" element={<S270propsParent />} />
+          <Route path="/s280" element={<S280CountUpParent />} />
           <Route path="/ex10" element={<Ex10 />} />
           <Route path="/ex20" element={<Ex20 />} />
           <Route path="/ex30" element={<Ex30 />} />
@@ -103,6 +105,10 @@ function App() {
           <Route path="/ex120" element={<Ex120 />} />
           <Route path="/ex130" element={<Ex130 />} />
           <Route path="/ex140" element={<Ex140 />} />
+          <Route path="/ex150" element={<Ex150 />} />
+          <Route path="/ex160" element={<Ex160 />} />
+          <Route path="/ex170" element={<Ex170 />} />
+          <Route path="/ex180" element={<Ex180 />} />
         </Routes>
       </Router>
     </>
