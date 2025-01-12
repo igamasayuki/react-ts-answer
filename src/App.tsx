@@ -1,56 +1,57 @@
 import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./views/Home";
-import Sample01 from "./views/Sample01";
-import Ex10 from "./views/answer/Ex10";
-import Ex20 from "./views/answer/Ex20";
-import S20attributeChange from "./views/sample/S20attributeChange";
-import S30onClickEvent from "./views/sample/S30onClickEvent";
-import S40onChangeEvent from "./views/sample/S40onChangeEvent";
-import S50radioButton from "./views/sample/S50radioButton";
-import S60singleCheckBox from "./views/sample/S60singleCheckBox";
-import S70multiCheckBox from "./views/sample/S70multiCheckBox";
-import S80singleSelectBox from "./views/sample/S80singleSelectBox";
-import S90multiSelectBox from "./views/sample/S90multiSelectBox";
-import S110trim from "./views/sample/S110trim";
-import S120blur from "./views/sample/S120blur";
-import S130if from "./views/sample/S130if";
-import S140if2 from "./views/sample/S140if2";
-import S150ifelse from "./views/sample/S150ifelse";
-import S160ifelse2 from "./views/sample/S160ifelse2";
-import S170elseif from "./views/sample/S170elseif";
-import S180forLoop from "./views/sample/S180forLoop";
-import S190forLoop2 from "./views/sample/S190forLoop2";
-import S200firstItem from "./views/sample/S200firstItem";
-import S210filter from "./views/sample/S210filter";
-import S220dynamicAttributes from "./views/sample/S220dynamicAttributes";
-import S230xxsSample from "./views/sample/S230xxsSample";
-import S240basicParent from "./views/sample/S240basicParent";
-import S250propsParent from "./views/sample/S250propsParent";
-import S260countUpParent from "./views/sample/S260countUpParent";
-import Ex30 from "./views/answer/Ex30";
-import Ex40 from "./views/answer/Ex40";
-import Ex50 from "./views/answer/Ex50";
-import Ex60 from "./views/answer/Ex60";
-import S100stringAddition from "./views/sample/S100stringAddition";
-import S100numberAddition from "./views/sample/S100numberAddition";
-import Ex70 from "./views/answer/Ex70";
-import Ex80 from "./views/answer/Ex80";
-import Ex90 from "./views/answer/Ex90";
-import Ex100 from "./views/answer/Ex100";
-import Ex110 from "./views/answer/Ex110";
-import Ex120 from "./views/answer/Ex120";
-import Ex130 from "./views/answer/Ex130";
-import Ex140 from "./views/answer/Ex140";
-import S215useEffect from "./views/sample/S215useEffect";
-import S216countUp from "./views/sample/S216countUp";
-import Ex150 from "./views/answer/Ex150";
-import Ex160 from "./views/answer/Ex160";
-import Ex170 from "./views/answer/Ex170";
-import S270propsParent from "./views/sample/S270propsParent";
-import S280CountUpParent from "./views/sample/S280CountUpParent";
-import Ex180 from "./views/answer/Ex180";
+import Home from "./pages/Home";
+import Sample01 from "./pages/Sample01";
+import Ex10 from "./pages/answer/Ex10";
+import Ex20 from "./pages/answer/Ex20";
+import S20attributeChange from "./pages/sample/S20attributeChange";
+import S30onClickEvent from "./pages/sample/S30onClickEvent";
+import S40onChangeEvent from "./pages/sample/S40onChangeEvent";
+import S50radioButton from "./pages/sample/S50radioButton";
+import S60singleCheckBox from "./pages/sample/S60singleCheckBox";
+import S70multiCheckBox from "./pages/sample/S70multiCheckBox";
+import S80singleSelectBox from "./pages/sample/S80singleSelectBox";
+import S90multiSelectBox from "./pages/sample/S90multiSelectBox";
+import S110trim from "./pages/sample/S110trim";
+import S120blur from "./pages/sample/S120blur";
+import S130if from "./pages/sample/S130if";
+import S140if2 from "./pages/sample/S140if2";
+import S150ifelse from "./pages/sample/S150ifelse";
+import S160ifelse2 from "./pages/sample/S160ifelse2";
+import S170elseif from "./pages/sample/S170elseif";
+import S180forLoop from "./pages/sample/S180forLoop";
+import S190forLoop2 from "./pages/sample/S190forLoop2";
+import S200firstItem from "./pages/sample/S200firstItem";
+import S210filter from "./pages/sample/S210filter";
+import S220dynamicAttributes from "./pages/sample/S220dynamicAttributes";
+import S230xxsSample from "./pages/sample/S230xxsSample";
+import S240basicParent from "./pages/sample/S240basicParent";
+import S250propsParent from "./pages/sample/S250propsParent";
+import S260countUpParent from "./pages/sample/S260countUpParent";
+import Ex30 from "./pages/answer/Ex30";
+import Ex40 from "./pages/answer/Ex40";
+import Ex50 from "./pages/answer/Ex50";
+import Ex60 from "./pages/answer/Ex60";
+import S100stringAddition from "./pages/sample/S100stringAddition";
+import S100numberAddition from "./pages/sample/S100numberAddition";
+import Ex70 from "./pages/answer/Ex70";
+import Ex80 from "./pages/answer/Ex80";
+import Ex90 from "./pages/answer/Ex90";
+import Ex100 from "./pages/answer/Ex100";
+import Ex110 from "./pages/answer/Ex110";
+import Ex120 from "./pages/answer/Ex120";
+import Ex130 from "./pages/answer/Ex130";
+import Ex140 from "./pages/answer/Ex140";
+import S215useEffect from "./pages/sample/S215useEffect";
+import S216countUp from "./pages/sample/S216countUp";
+import Ex150 from "./pages/answer/Ex150";
+import Ex160 from "./pages/answer/Ex160";
+import Ex170 from "./pages/answer/Ex170";
+import S270propsParent from "./pages/sample/S270propsParent";
+import Ex180 from "./pages/answer/Ex180";
+import S280countUpParent from "./pages/sample/S280countUpParent";
+import S290counterContext from "./pages/sample/S290counterContext";
 
 function App() {
   console.log("App component is rendering");
@@ -90,7 +91,8 @@ function App() {
           <Route path="/s250" element={<S250propsParent />} />
           <Route path="/s260" element={<S260countUpParent />} />
           <Route path="/s270" element={<S270propsParent />} />
-          <Route path="/s280" element={<S280CountUpParent />} />
+          <Route path="/s280" element={<S280countUpParent />} />
+          <Route path="/s290" element={<S290counterContext />} />
           <Route path="/ex10" element={<Ex10 />} />
           <Route path="/ex20" element={<Ex20 />} />
           <Route path="/ex30" element={<Ex30 />} />
