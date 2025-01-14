@@ -1,18 +1,18 @@
 import React from "react";
-import CompCounterProvider from "../../context/CompCounterProvider";
+import { CounterProvider } from "../../context/CounterProvider";
 import CompCounterDisplay from "../../components/sample/contextApi/CompCounterDisplay";
 import CompCounterButton from "../../components/sample/contextApi/CompCounterButton";
 
-const S290counterContext: React.FC = () => {
+const S290counterContextSample: React.FC = () => {
   return (
-    <CompCounterProvider>
+    <CounterProvider>
       <h1>カウンターサンプル（Context API）</h1>
       {/* 現在のカウントを表示 */}
       <CompCounterDisplay />
       {/* カウントを増減するボタン */}
       <CompCounterButton />
-    </CompCounterProvider>
+    </CounterProvider>
   );
 };
 
-export default S290counterContext;
+export default S290counterContextSample;

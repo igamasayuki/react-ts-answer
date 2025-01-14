@@ -51,7 +51,7 @@ import Ex170 from "./pages/answer/Ex170";
 import S270propsParent from "./pages/sample/S270propsParent";
 import Ex180 from "./pages/answer/Ex180";
 import S280countUpParent from "./pages/sample/S280countUpParent";
-import S290counterContext from "./pages/sample/S290counterContext";
+import S290counterContextSample from "./pages/sample/S290counterContextSample";
 
 function App() {
   console.log("App component is rendering");
@@ -92,7 +92,7 @@ function App() {
           <Route path="/s260" element={<S260countUpParent />} />
           <Route path="/s270" element={<S270propsParent />} />
           <Route path="/s280" element={<S280countUpParent />} />
-          <Route path="/s290" element={<S290counterContext />} />
+          <Route path="/s290" element={<S290counterContextSample />} />
           <Route path="/ex10" element={<Ex10 />} />
           <Route path="/ex20" element={<Ex20 />} />
           <Route path="/ex30" element={<Ex30 />} />
