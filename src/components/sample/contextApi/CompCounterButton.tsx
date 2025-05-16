@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { CounterContext } from "../../../context/CounterProvider";
+import React from "react";
+import { useCounterContext } from "../../../context/CounterProvider";
 
 const CompCounterButton: React.FC = () => {
   // useContextを使用してContext内の関数を取得
-  const { increment, decrement } = useContext(CounterContext);
+  const { increment, decrement } = useCounterContext();
   return (
     <div>
       <button onClick={decrement}>減らす (-)</button>

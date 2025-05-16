@@ -24,7 +24,7 @@ import S180forLoop from "./pages/sample/S180forLoop";
 import S190forLoop2 from "./pages/sample/S190forLoop2";
 import S200firstItem from "./pages/sample/S200firstItem";
 import S210filter from "./pages/sample/S210filter";
-import S220dynamicAttributes from "./pages/sample/S220dynamicAttributes";
+import S220fetchEmployeeList from "./pages/sample/S220fetchEmployeeList";
 import S230xxsSample from "./pages/sample/S230xxsSample";
 import S240basicParent from "./pages/sample/S240basicParent";
 import S250propsParent from "./pages/sample/S250propsParent";
@@ -85,7 +85,7 @@ function App() {
           <Route path="/s210" element={<S210filter />} />
           <Route path="/s215" element={<S215useEffect />} />
           <Route path="/s216" element={<S216countUp />} />
-          <Route path="/s220" element={<S220dynamicAttributes />} />
+          <Route path="/s220" element={<S220fetchEmployeeList />} />
           <Route path="/s230" element={<S230xxsSample />} />
           <Route path="/s240" element={<S240basicParent />} />
           <Route path="/s250" element={<S250propsParent />} />
