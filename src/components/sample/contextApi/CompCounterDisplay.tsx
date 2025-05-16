@@ -1,5 +1,5 @@
 import React from "react";
-import { useCounterContext } from "../../../context/CounterProvider";
+import { useCounterContext } from "../../../context/CounterContext";
 
 const CompCounterDisplay: React.FC = () => {
   // useContextを使用してContext内の値(現在のカウント値)を取得

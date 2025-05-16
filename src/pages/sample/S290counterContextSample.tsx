@@ -1,5 +1,5 @@
 import React from "react";
-import { CounterProvider } from "../../context/CounterProvider";
+import { CounterProvider } from "../../context/CounterContext";
 import CompCounterDisplay from "../../components/sample/contextApi/CompCounterDisplay";
 import CompCounterButton from "../../components/sample/contextApi/CompCounterButton";
 
