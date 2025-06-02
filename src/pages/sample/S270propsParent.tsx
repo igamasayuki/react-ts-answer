@@ -10,6 +10,7 @@ const S270propsParent: React.FC = () => {
     <div className="compSample">
       <p>現在値：{count}</p>
       <CompCountUpButton onCountUp={handleCountUp} />
+      <CompCountUpButton onCountUp={handleCountUp} />
     </div>
   );
 };
