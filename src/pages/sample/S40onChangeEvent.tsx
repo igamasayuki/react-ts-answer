@@ -4,6 +4,7 @@ const S40onChangeEvent: React.FC = () => {
   const [myName, setMyName] = useState<string>("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event);
     setMyName(event.target.value);
   };
 
