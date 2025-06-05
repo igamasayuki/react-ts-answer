@@ -1,8 +1,9 @@
 import React from "react";
 import { items } from "../../constants/items"; // 定数データをインポート
+import { Item } from "../../types/item";
 
 const S200firstItem: React.FC = () => {
-  const firstItem = items[0] || null;
+  const firstItem: Item | null = items[0] || null;
 
   return (
     <div className="sample">

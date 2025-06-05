@@ -6,7 +6,7 @@ const CompEmployeeList: React.FC = () => {
   const [error, setError] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleFetchEmployees = async () => {
+  const handleFetchEmployees: () => Promise<void> = async () => {
     setLoading(true);
     setError("");
     try {

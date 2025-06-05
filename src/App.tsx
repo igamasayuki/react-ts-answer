@@ -52,7 +52,6 @@ import S270propsParent from "./pages/sample/S270propsParent";
 import Ex180 from "./pages/answer/Ex180";
 import S280countUpParent from "./pages/sample/S280countUpParent";
 import S290counterContextSample from "./pages/sample/S290counterContextSample";
-import Test from "./pages/answer/Test";
 
 function App() {
   console.log("App component is rendering");
