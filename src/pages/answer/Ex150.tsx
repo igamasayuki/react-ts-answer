@@ -1,7 +1,6 @@
-import React from "react";
 import CompButtonCounter from "../../components/answer/CompButtonCounter";
 
-const Ex150: React.FC = () => {
+const Ex150 = () => {
   return (
     <div>
       <CompButtonCounter firstCount={0} />

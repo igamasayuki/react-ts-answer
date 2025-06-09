@@ -1,8 +1,7 @@
-import React from "react";
 import { items } from "../../constants/items"; // 定数データをインポート
 import { Item } from "../../types/item"; // 型定義をインポート
 
-const S210filter: React.FC = () => {
+const S210filter = () => {
   // 価格が3,000円以下（手頃な価格）の商品を抽出
   const cheapItems: Item[] = items.filter((item) => item.price <= 3000);
 

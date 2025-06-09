@@ -1,6 +1,4 @@
-import React from "react";
-
-const Ex30: React.FC = () => {
+const Ex30 = () => {
   const itemName = "お掃除ロボット";
   const itemUrl = "http://irobot-jp.com/";
   const itemImg = "img/irobot.jpg";

@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <nav>
       <Link to="/">Home</Link> | <Link to="/sample01">Sample01</Link> |

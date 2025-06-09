@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Ex60: React.FC = () => {
+const Ex60 = () => {
   const [name, setName] = useState<string>("");
   const handleClick = () => {
     setName("山田太郎");

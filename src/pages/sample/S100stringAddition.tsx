@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S100stringAddition: React.FC = () => {
+const S100stringAddition = () => {
   // 文字列の数値を保持する state
   const [strNum1, setStrNum1] = useState<string>("");
   const [strNum2, setStrNum2] = useState<string>("");

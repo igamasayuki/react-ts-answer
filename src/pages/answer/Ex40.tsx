@@ -1,6 +1,4 @@
-import React from "react";
-
-const Ex40: React.FC = () => {
+const Ex40 = () => {
   const isEnabled = true;
   const isDisabled = false;
 

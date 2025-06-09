@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S110trim: React.FC = () => {
+const S110trim = () => {
   const [str1, setStr1] = useState<string>("");
   const [str2, setStr2] = useState<string>("");
   const [result, setResult] = useState<string>("");

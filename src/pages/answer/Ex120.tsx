@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Employee型を定義
 interface Employee {
@@ -9,7 +9,7 @@ interface Employee {
   dependents: number;
 }
 
-const Ex120: React.FC = () => {
+const Ex120 = () => {
   // 初期データ
   const [employees, setEmployees] = useState<Employee[]>([
     {

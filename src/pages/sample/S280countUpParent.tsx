@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CompCountUpButton2 from "../../components/answer/CompCountUpButton2";
 
-const S280countUpParent: React.FC = () => {
+const S280countUpParent = () => {
   const [count, setCount] = useState<number>(0);
 
   // 子コンポーネントから渡された値を使ってカウントを増加させる

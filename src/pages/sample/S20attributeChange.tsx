@@ -1,7 +1,6 @@
-import React from "react";
 import assetsImageUrl from "../../assets/react.svg"; // src/assets/react.svgの画像をインポート
 
-const S20attributeChange: React.FC = () => {
+const S20attributeChange = () => {
   const url = "http://google.com";
   const publicImageUrl = "/vite.svg"; // public/vite.svgの画像
   const canNotClick = true;

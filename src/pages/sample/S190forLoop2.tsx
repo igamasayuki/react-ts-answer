@@ -1,8 +1,6 @@
-import React from "react";
-
 import { items } from "../../constants/items"; // 定数データをインポート
 
-const S190forLoop2: React.FC = () => {
+const S190forLoop2 = () => {
   return (
     <div className="sample">
       <table className="table">

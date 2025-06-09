@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CompCountUpButton from "../../components/sample/CompCountUpButton";
-const S270propsParent: React.FC = () => {
+const S270propsParent = () => {
   const [count, setCount] = useState<number>(0);
 
   const handleCountUp = () => {

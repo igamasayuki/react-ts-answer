@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S120blur: React.FC = () => {
+const S120blur = () => {
   const [myName, setMyName] = useState<string>("名無し");
 
   const handleBlur = (event: React.ChangeEvent<HTMLInputElement>) => {

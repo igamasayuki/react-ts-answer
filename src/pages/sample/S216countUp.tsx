@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const S216countUp: React.FC = () => {
+const S216countUp = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

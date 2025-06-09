@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S60singleCheckBox: React.FC = () => {
+const S60singleCheckBox = () => {
   const [isAgree, setIsAgree] = useState<boolean>(false);
 
   const handleSingleCheckBoxChange = (

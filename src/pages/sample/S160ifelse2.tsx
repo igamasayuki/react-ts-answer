@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S160ifelse2: React.FC = () => {
+const S160ifelse2 = () => {
   const [canShow, setCanShow] = useState<boolean>(true);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

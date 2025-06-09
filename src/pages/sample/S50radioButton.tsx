@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S50radioButton: React.FC = () => {
+const S50radioButton = () => {
   const hobbyOptions = {
     swim: "水泳",
     bike: "自転車",

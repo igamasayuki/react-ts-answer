@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { hobbyOptions } from "../../constants/data";
 
-const S80singleSelectBox: React.FC = () => {
+const S80singleSelectBox = () => {
   const [hobby, setHobby] = useState<string>(hobbyOptions.bike);
 
   const handleSelectBoxChange = (

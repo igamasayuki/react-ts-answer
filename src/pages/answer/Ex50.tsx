@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Ex50: React.FC = () => {
+const Ex50 = () => {
   const [isEnabled, setIsEnabled] = useState<boolean>(true);
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
 

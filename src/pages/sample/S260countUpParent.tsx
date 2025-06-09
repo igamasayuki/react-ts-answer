@@ -1,7 +1,6 @@
-import React from "react";
 import CompCounterProp from "../../components/sample/CompCounterPropProps";
 
-const S260countUpParent: React.FC = () => {
+const S260countUpParent = () => {
   return (
     <div className="compSample">
       <CompCounterProp /> {/* デフォルト値0を使用 */}

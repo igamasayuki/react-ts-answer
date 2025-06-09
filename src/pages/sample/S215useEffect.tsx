@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
-const S215useEffect: React.FC = () => {
+const S215useEffect = () => {
   useEffect(() => {
     // ここに実行したい処理を記述
     console.log("コンポーネントが表示されました");

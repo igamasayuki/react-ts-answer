@@ -1,6 +1,4 @@
-import React from "react";
-
-const S180forLoop: React.FC = () => {
+const S180forLoop = () => {
   const names = ["武田", "織田", "豊臣", "上杉", "徳川"];
 
   return (

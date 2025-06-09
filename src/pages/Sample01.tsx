@@ -1,6 +1,4 @@
-import React from "react";
-
-const Sample01: React.FC = () => {
+const Sample01 = () => {
   const message = "Hello React";
   const greet = "こんにちは！";
   return (

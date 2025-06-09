@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S230xxsSample: React.FC = () => {
+const S230xxsSample = () => {
   const [name, setName] = useState<string>("悪意太郎");
   const [comment, setComment] = useState<string>(
     "<script>alert('JavaScriptプログラム');</script>"

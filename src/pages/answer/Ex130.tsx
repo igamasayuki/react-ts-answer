@@ -1,8 +1,7 @@
-import React from "react";
 import CompMyName from "../../components/sample/CompMyName";
 import CompMyHobby from "../../components/sample/CompMyHobby";
 
-const Ex130: React.FC = () => {
+const Ex130 = () => {
   return (
     <div>
       <CompMyName />

@@ -1,5 +1,3 @@
-import React from "react";
-
 // Employee型を定義
 interface Employee {
   id: number;
@@ -34,7 +32,7 @@ const employees: Employee[] = [
   },
 ];
 
-const Ex110: React.FC = () => {
+const Ex110 = () => {
   // 給料30万円以上の従業員をフィルタリング
   const highSalaryEmployees = employees.filter(
     (employee) => employee.salary >= 300000

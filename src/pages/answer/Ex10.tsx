@@ -1,5 +1,4 @@
-import React from "react";
-const Ex10: React.FC = () => {
+const Ex10 = () => {
   const name = "山田太郎";
   return (
     <div>

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Ex70: React.FC = () => {
+const Ex70 = () => {
   const genderOptions = {
     man: "男性",
     woman: "女性",

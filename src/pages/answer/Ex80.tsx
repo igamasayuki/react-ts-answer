@@ -1,7 +1,7 @@
-import React from "react";
+import { useState } from "react";
 
-const Ex80: React.FC = () => {
-  const [isRobot, setIsRobot] = React.useState<boolean>(false);
+const Ex80 = () => {
+  const [isRobot, setIsRobot] = useState<boolean>(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsRobot(event.target.checked);

@@ -1,8 +1,7 @@
-import React from "react";
 import CompMyName from "../../components/sample/CompMyName";
 import CompMyHobby from "../../components/sample/CompMyHobby";
 
-const S240basicParent: React.FC = () => {
+const S240basicParent = () => {
   return (
     <div className="sample">
       名前：

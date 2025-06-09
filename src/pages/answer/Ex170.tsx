@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CompCountUpButton2 from "../../components/answer/CompCountUpButton2";
 
-const Ex170: React.FC = () => {
+const Ex170 = () => {
   const [currentCount, setCurrentCount] = useState<number>(0);
 
   const handleCountUp = () => {

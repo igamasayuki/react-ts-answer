@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CompYesOrNo from "../../components/answer/CompYesOrNo";
 
-const Ex180: React.FC = () => {
+const Ex180 = () => {
   const [currentYesOrNo, setCurrentYesOrNo] =
     useState<string>("ボタンを押してください");
 

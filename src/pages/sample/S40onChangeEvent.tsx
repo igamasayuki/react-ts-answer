@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S40onChangeEvent: React.FC = () => {
+const S40onChangeEvent = () => {
   const [myName, setMyName] = useState<string>("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

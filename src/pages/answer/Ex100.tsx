@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Ex100: React.FC = () => {
+const Ex100 = () => {
   const [hobby, setHobby] = useState<string>("");
   const [triathlonType, setTriathlonType] = useState<string>("bike");
   const [otherHobby, setOtherHobby] = useState<string>("");

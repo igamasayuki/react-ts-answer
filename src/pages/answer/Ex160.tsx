@@ -1,7 +1,6 @@
-import React from "react";
 import CompCheer from "../../components/answer/CompCheer";
 
-const Ex160: React.FC = () => {
+const Ex160 = () => {
   return (
     <div>
       <CompCheer fight="ファイト！" />

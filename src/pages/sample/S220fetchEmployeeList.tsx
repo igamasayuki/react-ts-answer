@@ -1,7 +1,6 @@
-import React from "react";
 import CompEmployeeList from "../../components/sample/CompEmployeeList";
 
-const S220fetchEmployeeList: React.FC = () => {
+const S220fetchEmployeeList = () => {
   return (
     <>
       <CompEmployeeList />

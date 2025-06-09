@@ -1,5 +1,4 @@
-import React from "react";
-const Ex20: React.FC = () => {
+const Ex20 = () => {
   const name = "山田太郎";
   const age = 21;
   const birthDay = new Date(2000, 1 - 1, 1);

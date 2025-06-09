@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { hobbyOptions } from "../../constants/data";
 
-const S90multiSelectBox: React.FC = () => {
+const S90multiSelectBox = () => {
   const [hobbies, setHobbies] = useState<string[]>([
     hobbyOptions.swim,
     hobbyOptions.run,

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const S170elseif: React.FC = () => {
+const S170elseif = () => {
   const [likeCar, setLikeCar] = useState<string>("");
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {

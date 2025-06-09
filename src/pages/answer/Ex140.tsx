@@ -1,7 +1,6 @@
-import React from "react";
 import CompSelfIntroduction from "../../components/answer/CompSelfIntroduction";
 
-const Ex140: React.FC = () => {
+const Ex140 = () => {
   return (
     <div>
       <CompSelfIntroduction myName="山田太郎" myAge={18} myHobby="ゲーム" />
