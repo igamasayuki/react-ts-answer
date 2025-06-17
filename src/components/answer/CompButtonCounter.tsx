@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-interface CompButtonCounterProps {
+interface Props {
   firstCount?: number;
 }
 
-const CompButtonCounter: React.FC<CompButtonCounterProps> = ({
-  firstCount = 0,
-}) => {
+const CompButtonCounter = ({ firstCount = 0 }: Props) => {
   const [currentCount, setCurrentCount] = useState(firstCount);
 
   const handleCountUp = () => {

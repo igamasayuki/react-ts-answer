@@ -1,10 +1,8 @@
-import React from "react";
-
-interface CompYesOrNoProps {
+interface Props {
   onYesOrNo: (yesOrNo: string) => void;
 }
 
-const CompYesOrNo: React.FC<CompYesOrNoProps> = ({ onYesOrNo }) => {
+const CompYesOrNo = ({ onYesOrNo }: Props) => {
   const handleClick = (value: string) => {
     onYesOrNo(value); // 親に "Yes" または "No" を渡す
   };

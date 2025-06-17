@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { fetchEmployees, Employee } from "../../api/employeeApi";
 
-const CompEmployeeList: React.FC = () => {
+const CompEmployeeList = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [error, setError] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -15,6 +15,7 @@ const CompEmployeeList: React.FC = () => {
     } catch (e: unknown) {
       if (e instanceof Error) {
         console.error("エラー:", e.message);
+        setError(e.message);
       }
     } finally {
       setLoading(false);

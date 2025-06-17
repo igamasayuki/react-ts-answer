@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-interface CompCheerProps {
+interface Props {
   fight?: string;
 }
 
-const CompCheer: React.FC<CompCheerProps> = ({ fight = "" }) => {
+const CompCheer = ({ fight = "" }: Props) => {
   const [cheer, setCheer] = useState(fight);
 
   const handleCheer = () => {

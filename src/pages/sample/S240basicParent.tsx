@@ -6,13 +6,10 @@ const S240basicParent = () => {
     <div className="sample">
       名前：
       <CompMyName />
-      <br />
       趣味：
       <CompMyHobby />
-      <br />
       名前：
       <CompMyName />
-      <br />
       趣味：
       <CompMyHobby />
     </div>

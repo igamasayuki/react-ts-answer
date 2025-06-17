@@ -1,12 +1,8 @@
-import React from "react";
-
-interface CompCountUpButton2Props {
+interface Props {
   onCountUp: (count: number) => void;
 }
 
-const CompCountUpButton2: React.FC<CompCountUpButton2Props> = ({
-  onCountUp,
-}) => {
+const CompCountUpButton2 = ({ onCountUp }: Props) => {
   const handleClick = () => {
     const incrementValue = 1; // 親に渡す値
     console.log(`${incrementValue} を親に渡します`);

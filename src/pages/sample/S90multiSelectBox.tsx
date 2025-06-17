@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { hobbyOptions } from "../../constants/data";
+import { hobbyOptions } from "../../constants/hobby-options";
 
 const S90multiSelectBox = () => {
   const [hobbies, setHobbies] = useState<string[]>([

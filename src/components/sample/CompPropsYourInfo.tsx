@@ -1,14 +1,9 @@
-import React from "react";
-
-interface CompYourInfoProps {
+interface Props {
   yourName?: string;
   yourAge?: number;
 }
 
-const CompPropsYourInfo: React.FC<CompYourInfoProps> = ({
-  yourName = "名無し",
-  yourAge = 0,
-}) => {
+const CompPropsYourInfo = ({ yourName = "名無し", yourAge = 0 }: Props) => {
   return (
     <div className="ex">
       <div>こんにちは、{yourName}さん！</div>

@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-interface CompCounterPropProps {
+interface Props {
   initialCount?: number;
 }
 
-const CompCounterProp: React.FC<CompCounterPropProps> = ({
-  initialCount = 0,
-}) => {
+const CompCounterProp = ({ initialCount = 0 }: Props) => {
   // 親から受け取った値をstateにコピー
   const [nowCount, setNowCount] = useState(initialCount);
 
@@ -16,7 +14,7 @@ const CompCounterProp: React.FC<CompCounterPropProps> = ({
   }, [nowCount]);
 
   const countUp = () => {
-    setNowCount(nowCount + 1); // stateを更新
+    setNowCount((nowCount) => nowCount + 1); // stateを更新
   };
 
   return (

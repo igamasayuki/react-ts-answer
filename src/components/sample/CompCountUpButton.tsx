@@ -1,10 +1,8 @@
-import React from "react";
-
-interface CompCountUpButtonProps {
+interface Props {
   onCountUp: () => void; // 親から渡されるコールバック関数
 }
 
-const CompCountUpButton: React.FC<CompCountUpButtonProps> = ({ onCountUp }) => {
+const CompCountUpButton = ({ onCountUp }: Props) => {
   return (
     <div className="ex">
       <button type="button" onClick={onCountUp}>

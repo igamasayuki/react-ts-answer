@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const CompMyName: React.FC = () => {
+const CompMyName = () => {
   const [myName, setMyName] = useState<string>("山田太郎");
 
   const changeName = () => {

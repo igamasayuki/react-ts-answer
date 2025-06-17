@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const CompMyHobby: React.FC = () => {
+const CompMyHobby = () => {
   const [myHobby, setMyHobby] = useState<string>("トライアスロン");
 
   const changeHobby = () => {
