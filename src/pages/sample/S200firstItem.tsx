@@ -1,5 +1,5 @@
 import { items } from "../../constants/items"; // 定数データをインポート
-import { Item } from "../../types/item";
+import type { Item } from "../../types/item";
 
 const S200firstItem = () => {
   const firstItem: Item | null = items[0] || null;

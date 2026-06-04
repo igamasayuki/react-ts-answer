@@ -1,5 +1,5 @@
 import { items } from "../../constants/items"; // 定数データをインポート
-import { Item } from "../../types/item"; // 型定義をインポート
+import type { Item } from "../../types/item"; // 型定義をインポート
 
 const S210filter = () => {
   // 価格が3,000円以下（手頃な価格）の商品を抽出
