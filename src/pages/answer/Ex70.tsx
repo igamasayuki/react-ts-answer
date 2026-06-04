@@ -18,7 +18,7 @@ const Ex70 = () => {
 
   const [lastName, setLastName] = useState<string>("");
   const [firstName, setFirstName] = useState<string>("");
-  const [age, setAge] = useState<number>(0);
+  const [age, setAge] = useState<number>();
   const [gender, setGender] = useState<string>("");
   const [hobbies, setHobbies] = useState<string[]>([]);
   const [favoriteWord, setFavoriteWord] = useState<string>("");
@@ -42,7 +42,7 @@ const Ex70 = () => {
   };
 
   const handleHobbyCheckBoxChange = (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     const value = event.target.value;
     if (hobbies.includes(value)) {
@@ -57,7 +57,7 @@ const Ex70 = () => {
   };
 
   const handleFavoriteWordSelectBoxChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
+    event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
     setFavoriteWord(event.target.value);
   };
@@ -67,7 +67,7 @@ const Ex70 = () => {
   };
 
   const handleIsAgreeSingleCheckBoxChange = (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     setIsAgree(event.target.checked);
   };

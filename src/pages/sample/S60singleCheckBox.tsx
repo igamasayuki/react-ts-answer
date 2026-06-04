@@ -4,7 +4,7 @@ const S60singleCheckBox = () => {
   const [isAgree, setIsAgree] = useState<boolean>(false);
 
   const handleSingleCheckBoxChange = (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     setIsAgree(event.target.checked);
   };

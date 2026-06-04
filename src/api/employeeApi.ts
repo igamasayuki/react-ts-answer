@@ -1,4 +1,5 @@
-const BASE_URL = "http://153.127.48.168:8080/ex-emp-api/employee/employees";
+const BASE_URL =
+  "https://three-javascript-jquery-ajax-answer.onrender.com/employee/employees";
 
 // 従業員の型定義
 export interface Employee {
