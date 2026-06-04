@@ -8,7 +8,7 @@ const S216countUp = () => {
   }, [count]); // countが変わるたびに実行
 
   const countUp = () => {
-    setCount(count + 1);
+    setCount((prev) => prev + 1);
   };
 
   return (

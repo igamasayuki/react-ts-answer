@@ -8,7 +8,7 @@ const CompButtonCounter = ({ firstCount = 0 }: Props) => {
   const [currentCount, setCurrentCount] = useState(firstCount);
 
   const handleCountUp = () => {
-    setCurrentCount(currentCount + 1);
+    setCurrentCount((prev) => prev + 1);
   };
 
   return (

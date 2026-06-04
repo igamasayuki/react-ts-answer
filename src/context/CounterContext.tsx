@@ -20,8 +20,8 @@ export const CounterProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [count, setCount] = useState(0);
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  const increment = () => setCount((prev) => prev + 1);
+  const decrement = () => setCount((prev) => prev - 1);
 
   return (
     <CounterContext.Provider value={{ count, increment, decrement }}>
