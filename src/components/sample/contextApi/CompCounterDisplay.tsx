@@ -1,7 +1,6 @@
-import React from "react";
 import { useCounterContext } from "../../../context/CounterContext";
 
-const CompCounterDisplay: React.FC = () => {
+const CompCounterDisplay = () => {
   // useContextを使用してContext内の値(現在のカウント値)を取得
   const { count } = useCounterContext();
   return <div>現在のカウント: {count}</div>;
