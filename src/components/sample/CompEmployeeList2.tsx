@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchEmployees, Employee } from "../../api/employeeApi";
+import { fetchEmployees, type Employee } from "../../api/employeeApi";
 
 const CompEmployeeList2 = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
