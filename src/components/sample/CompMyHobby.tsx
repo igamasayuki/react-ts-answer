@@ -3,7 +3,7 @@ import { useState } from "react";
 const CompMyHobby = () => {
   const [myHobby, setMyHobby] = useState<string>("トライアスロン");
 
-  const changeHobby = () => {
+  const handleChangeHobby = () => {
     setMyHobby("マラソン");
   };
 
@@ -11,7 +11,7 @@ const CompMyHobby = () => {
     <div className="sample">
       <div>
         私の趣味は{myHobby}です。
-        <button type="button" onClick={changeHobby}>
+        <button type="button" onClick={handleChangeHobby}>
           趣味変更
         </button>
       </div>
