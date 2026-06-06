@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-interface Props {
+type Props = {
   initialCount?: number;
 }
 

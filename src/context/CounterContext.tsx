@@ -2,7 +2,7 @@ import { createContext, useContext, useState, type ReactNode } from "react";
 
 // 1.Contextの型定義
 // (Contextの中に入る「状態」と「操作関数」の形を定義します)
-interface CounterContextType {
+type CounterContextType = {
   count: number;
   increment: () => void;
   decrement: () => void;
@@ -15,7 +15,7 @@ const CounterContext = createContext<CounterContextType | undefined>(undefined);
 
 // 3.Providerコンポーネントの定義
 // (状態と操作をContextに詰めて、子コンポーネントに配る役割です)
-interface Props {
+type Props = {
   // <CounterProvider>〜</CounterProvider> の間に書いた要素が children に入る
   // 例：
   // <CounterProvider>

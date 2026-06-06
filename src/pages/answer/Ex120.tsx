@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Employee型を定義
-interface Employee {
+type Employee = {
   id: number;
   name: string;
   joinDate: string;

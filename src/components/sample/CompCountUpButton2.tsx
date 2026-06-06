@@ -1,4 +1,4 @@
-interface Props {
+type Props = {
   onCountUp: (count: number) => void;
 }
 

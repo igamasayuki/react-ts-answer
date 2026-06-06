@@ -2,7 +2,7 @@ const BASE_URL =
   "https://three-javascript-jquery-ajax-answer.onrender.com/employee/employees";
 
 // 従業員の型定義
-export interface Employee {
+export type Employee = {
   id: number; // 従業員ID（数値型）
   name: string; // 名前（文字列型）
   hireDate: string; // 入社日（文字列型）

@@ -1,4 +1,4 @@
-interface Props {
+type Props = {
   myName?: string;
   myAge?: number;
   myHobby?: string;

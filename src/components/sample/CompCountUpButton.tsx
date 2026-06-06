@@ -1,4 +1,4 @@
-interface Props {
+type Props = {
   onCountUp: () => void; // 親から渡されるコールバック関数
 }
 
