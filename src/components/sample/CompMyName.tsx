@@ -3,7 +3,7 @@ import { useState } from "react";
 const CompMyName = () => {
   const [myName, setMyName] = useState<string>("山田太郎");
 
-  const handleChangeName = () => {
+  const handleClickName = () => {
     setMyName("鈴木一郎");
   };
 
@@ -11,7 +11,7 @@ const CompMyName = () => {
     <div className="sample">
       <div>
         私の名前は{myName}です。
-        <button type="button" onClick={handleChangeName}>
+        <button type="button" onClick={handleClickName}>
           名前変更
         </button>
       </div>
